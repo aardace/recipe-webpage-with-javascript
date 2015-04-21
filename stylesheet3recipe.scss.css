@@ -1,0 +1,98 @@
+* {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*border: 1px solid black;*/
+}
+
+$main-color: red;
+$alert-color: red;
+$warning-color: yellow;
+$tasty-color: darkblue;
+$yummy-color: orange;
+$color1: purple;
+$color2: purple;
+$color3: pink;
+@mixin message($color: none) {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1em;
+  padding: 1em;
+  border-color: $color;
+}
+
+article {
+  border-right: solid 0.2em $tasty-color;
+  h1 {
+    color: $main-color;
+  }
+  p {
+    margin: 1em 0;
+    color: $tasty-color;
+    font-family: Arial Black;
+  }
+  body {
+    font-family: Arial, Verdana, sans-serif;
+  }
+  img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  .fancy {
+    font-family: cursive;
+    color: $tasty-color;
+  }
+  #wowza {
+    color: $color1;
+    font-size: 250%;
+  }
+  div {
+    color: $color1;
+  }
+  div p {
+    color: orange;
+  }
+  p:nth-child(4) {
+    font-family: Verdana;
+    font-size: 50%;
+  }
+  #groovylink {
+    color: $color2;
+    border: 10px dashed blue;
+  }
+  #groovylink:hover {
+    color: $color3;
+    font-size: 200%;
+  }
+  img:hover {
+    width: 2000px;
+    height: 1000px;
+  }
+  ul {
+    color: $color3;
+  }
+}
+
+.message {
+  &.alert {
+    @include message($alert-color);
+  }
+  &.warning {
+    @include message($warning-color);
+  }
+}
+
+.button {
+  height: 100px;
+  width: 100px;
+  background-color: #FA6900;
+  border-radius: 5px
+;}
+
+.popup {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 5px;
+}

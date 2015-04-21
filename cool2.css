@@ -1,0 +1,71 @@
+* {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*border: 1px solid black;*/ }
+
+article {
+  border-right: solid 0.2em darkblue; }
+  article h1 {
+    color: red; }
+  article p {
+    margin: 1em 0;
+    color: darkblue;
+    font-family: Arial Black; }
+  article body {
+    font-family: Arial, Verdana, sans-serif; }
+  article img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #888888; }
+  article .fancy {
+    font-family: cursive;
+    color: darkblue; }
+  article #wowza {
+    color: purple;
+    font-size: 250%; }
+  article div {
+    color: purple; }
+  article div p {
+    color: orange; }
+  article p:nth-child(4) {
+    font-family: Verdana;
+    font-size: 50%; }
+  article #groovylink {
+    color: purple;
+    border: 10px dashed blue; }
+  article #groovylink:hover {
+    color: pink;
+    font-size: 200%; }
+  article img:hover {
+    width: 2000px;
+    height: 1000px; }
+  article ul {
+    color: pink; }
+
+.message.alert {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1em;
+  padding: 1em;
+  border-color: red; }
+.message.warning {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1em;
+  padding: 1em;
+  border-color: yellow; }
+
+.button {
+  height: 100px;
+  width: 100px;
+  background-color: #FA6900;
+  border-radius: 5px; }
+
+.popup {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=cool2.css.map */
